@@ -85,9 +85,9 @@ form.addPath('name.*')
 
 ## Test
 `npm test`  
-[Mocha Coverage](http://nrako.github.io/formal-mongoose/coverage.html)  
+Mocha Coverage
 `npm run-script coverage`  
-[On Coveralls.io](https://coveralls.io/r/nrako/formal-mongoose)
+[On coveralls.io](https://coveralls.io/r/nrako/formal-mongoose)
 
 All tests are in Coffee-script, hence easy to read! Provides a great way to understand the API ;)
 

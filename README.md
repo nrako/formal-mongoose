@@ -8,7 +8,7 @@ Formal + Mongoose = DRY! Simple solution to define a form with validation (and m
 var Form = require('formal-mongoose'),
     model = mongoose.model('User');
 
-var form = new Form(model, ['name.*', 'email', 'age']);
+var form = new Form(model, ['name.*', 'email']);
 
 form.field({
   tos: {

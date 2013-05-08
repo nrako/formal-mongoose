@@ -1,4 +1,4 @@
-# Formal-mongoose [![Build Status](https://travis-ci.org/nrako/formal-mongoose.png?branch=master)](https://travis-ci.org/nrako/formal-mongoose) [![Coverage Status](https://coveralls.io/repos/nrako/formal-mongoose/badge.png?branch=master)](https://coveralls.io/r/nrako/formal) [![Dependency Status](https://gemnasium.com/nrako/formal.png)](https://gemnasium.com/nrako/formal)
+# Formal-mongoose [![Build Status](https://travis-ci.org/nrako/formal-mongoose.png?branch=master)](https://travis-ci.org/nrako/formal-mongoose) [![Coverage Status](https://coveralls.io/repos/nrako/formal-mongoose/badge.png?branch=master)](https://coveralls.io/r/nrako/formal) [![Dependency Status](https://gemnasium.com/nrako/formal-mongoose.png)](https://gemnasium.com/nrako/formal-mongoose)
 
 Formal + Mongoose = DRY! Simple solution to define a form with validation (and more) from a mongoose schema.
 
@@ -85,9 +85,9 @@ form.addPath('name.*')
 
 ## Test
 `npm test`  
-[Mocha Coverage](http://nrako.github.io/formal/coverage.html)  
+[Mocha Coverage](http://nrako.github.io/formal-mongoose/coverage.html)  
 `npm run-script coverage`  
-[On Coveralls.io](https://coveralls.io/r/nrako/formal)
+[On Coveralls.io](https://coveralls.io/r/nrako/formal-mongoose)
 
 All tests are in Coffee-script, hence easy to read! Provides a great way to understand the API ;)
 

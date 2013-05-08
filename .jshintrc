@@ -1,0 +1,24 @@
+{
+  "globals": {
+    "console": true
+  },
+  "node": true,
+  "es5" : true,
+  "esnext": true,
+  "bitwise": true,
+  "immed": true,
+  "indent": 2,
+  "browser" : true,
+  "devel": true,
+  "newcap": true,
+  "newcap": true,
+  "noarg": true,
+  "quotmark": "single",
+  "regexp": true,
+  "undef": true,
+  "unused": false,
+  "eqnull": true,
+  "boss": true,
+  "trailing": true,
+  "maxdepth": 4
+}

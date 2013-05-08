@@ -1,0 +1,59 @@
+{
+  "name": "formal-mongoose",
+  "version": "0.1.0",
+  "description": "formal + mongoose = DRY! Define your form from your mongoose schema.",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test",
+    "blanket": {
+      "pattern": [
+        "formal-mongoose/lib"
+      ]
+    },
+    "coverage": "grunt mochacov:coverage > _gh-pages/coverage.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/nrako/formal-mongoose"
+  },
+  "bugs": {
+    "url": "http://github.com/nrako/formal-mongoose/issues"
+  },
+  "keywords": [
+    "connect",
+    "express",
+    "form",
+    "validation",
+    "mongoose"
+  ],
+  "author": "@nrako <nico@nrako.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">= v0.8.0"
+  },
+  "dependencies": {
+    "lodash": "~1.2.1",
+    "mpath": "~0.2.1",
+    "mongoose": "~3.6.9",
+    "formal": "~0.1.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "glob": "~3.2.1",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-yuidoc": "~0.4.0",
+    "grunt-contrib-jshint": "~0.4.3",
+    "grunt-jsvalidate": "~0.2.1",
+    "grunt-simple-mocha": "~0.4.0",
+    "grunt-mocha-cov": "0.0.4",
+    "grunt-dox": "~0.4.1",
+    "grunt-plato": "~0.2.0",
+    "chai": "~1.6.0",
+    "matchdep": "~0.1.2",
+    "blanket": "~1.1.4",
+    "travis-cov": "~0.2.4",
+    "coffee-script": "~1.6.2",
+    "moment": "~2.0.0",
+    "mongoose-validator": "~0.2.1"
+  }
+}

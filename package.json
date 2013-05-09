@@ -1,6 +1,6 @@
 {
   "name": "formal-mongoose",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "formal + mongoose = DRY! Define your form from your mongoose schema.",
   "main": "index.js",
   "scripts": {

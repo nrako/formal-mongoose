@@ -100,7 +100,7 @@ module.exports = function(grunt) {
 
   // Run server-side tests
   grunt.registerTask('test', ['jshint', 'jsvalidate', 'simplemocha']);
-  grunt.registerTask('travis', ['mochacov:test']);
+  grunt.registerTask('travis', ['mochacov:coveralls']);
 
   // Generates the docs api (dox) and the plato report
   grunt.registerTask('gh-pages', ['clean:docs', 'plato', 'dox']);

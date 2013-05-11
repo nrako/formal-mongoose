@@ -1,4 +1,8 @@
 
+### v0.2.2 — 2013-05-12
+
+* Fixed critical issue where duck typing was required instead of instanceof
+
 ### v0.2.1 — 2013-05-09
 
 * Fixed lodash dependencies

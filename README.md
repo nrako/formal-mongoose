@@ -47,7 +47,7 @@ For the inherited prototype see the [Formal API](http://nrako.github.io/formal).
 
 ### new Form(schema:Object|String, fields:Array, options:Object):instance
 
-`schema` mongoose model or schema or the model name  
+`schema` mongoose schema or model  
 `fields` array of strings path to import from the mongoose schema  
 `options` object of options identical to Formal
 

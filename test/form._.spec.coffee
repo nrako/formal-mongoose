@@ -61,11 +61,6 @@ describe 'Formal-mongoose', ->
 
     expect(Object.keys(form.paths).length).to.equal 2
 
-  it 'supports string as schema argument', ->
-    form = new Form 'TestModel', ['name.family', 'name']
-
-    expect(Object.keys(form.paths).length).to.equal 1
-
   it 'supports wildcard shortcut in path name', ->
     form = new Form schema, ['name.*']
 
@@ -129,6 +124,16 @@ describe 'Formal-mongoose', ->
 
     expect(fn).to.throw TypeError
 
+    fn2 = ->
+      form = new Form {}
+
+    expect(fn2).to.throw TypeError
+
+    fn3 = ->
+      form = new Form
+        tree: {}
+
+    expect(fn3).to.throw TypeError
 
 
 

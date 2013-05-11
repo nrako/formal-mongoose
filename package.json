@@ -1,6 +1,6 @@
 {
   "name": "formal-mongoose",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "formal + mongoose = DRY! Define your form from your mongoose schema.",
   "main": "index.js",
   "scripts": {
@@ -33,10 +33,10 @@
   },
   "dependencies": {
     "mpath": "~0.2.1",
-    "mongoose": "~3.6.10",
     "formal": "~0.2.0"
   },
   "devDependencies": {
+    "mongoose": "~3.6.10",
     "grunt": "~0.4.1",
     "glob": "~3.2.1",
     "grunt-contrib-clean": "~0.4.1",

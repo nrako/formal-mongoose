@@ -4,6 +4,7 @@ chai = require 'chai'
 expect = chai.expect
 Form = require '../lib/form'
 mongoose = require 'mongoose'
+Schema = mongoose.Schema
 Formal = require 'formal'
 FieldTypes = Formal.FieldTypes
 moment = require 'moment'
@@ -11,7 +12,10 @@ validate = require('mongoose-validator').validate
 
 describe 'Formal-mongoose', ->
 
-  schema = new mongoose.Schema
+  subSchema = new Schema
+    name: String
+
+  schema = new Schema
     email:
       type: String
       trim: true
@@ -26,6 +30,12 @@ describe 'Formal-mongoose', ->
     name:
       family: String
       first: String
+    mix: {}
+    buf: Buffer
+    sub:
+      type: Schema.Types.ObjectId
+      ref: 'SubSchema'
+    subs: [subSchema]
 
   schema.virtual('fullname').get ->
     return this.name.first + ' ' + this.name.family
@@ -118,22 +128,44 @@ describe 'Formal-mongoose', ->
     # app.post('/url', form.express, function (req, res) {...})
     middleware request, response, cb
 
+  # Hopefuly this will disappear soon
+  it 'should throw errors on unsuported SchemaTypes', ->
+    fn = ->
+      form = new Form schema, ['mix']
+
+    expect(fn).to.throw Error
+
+    fn = ->
+      form = new Form schema, ['buf']
+
+    expect(fn).to.throw Error
+
+    fn = ->
+      form = new Form schema, ['sub']
+
+    expect(fn).to.throw Error
+
+    fn = ->
+      form = new Form schema, ['subs']
+
+    expect(fn).to.throw Error
+
   it 'can have 100% test coverage', ->
     fn = ->
       form = new Form null
 
     expect(fn).to.throw TypeError
 
-    fn2 = ->
+    fn = ->
       form = new Form {}
 
-    expect(fn2).to.throw TypeError
+    expect(fn).to.throw TypeError
 
-    fn3 = ->
+    fn = ->
       form = new Form
         tree: {}
 
-    expect(fn3).to.throw TypeError
+    expect(fn).to.throw TypeError
 
 
 

@@ -1,6 +1,6 @@
 {
   "name": "formal-mongoose",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "formal + mongoose = DRY! Define your form from your mongoose schema.",
   "main": "index.js",
   "scripts": {
@@ -20,11 +20,11 @@
     "url": "http://github.com/nrako/formal-mongoose/issues"
   },
   "keywords": [
-    "connect",
-    "express",
     "form",
+    "mongoose",
     "validation",
-    "mongoose"
+    "connect",
+    "express"
   ],
   "author": "@nrako <nico@nrako.com>",
   "license": "MIT",
@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "mpath": "~0.2.1",
-    "formal": "~0.2.0"
+    "formal": "~0.3.0"
   },
   "devDependencies": {
     "mongoose": "~3.6.10",
@@ -53,6 +53,7 @@
     "travis-cov": "~0.2.4",
     "coffee-script": "~1.6.2",
     "moment": "~2.0.0",
-    "mongoose-validator": "~0.2.1"
+    "mongoose-validator": "~0.2.1",
+    "grunt-jsonlint": "~1.0.0"
   }
 }

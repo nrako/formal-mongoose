@@ -1,4 +1,4 @@
-# Formal-mongoose [![Build Status](https://travis-ci.org/nrako/formal-mongoose.png?branch=master)](https://travis-ci.org/nrako/formal-mongoose) [![Coverage Status](https://coveralls.io/repos/nrako/formal-mongoose/badge.png?branch=master)](https://coveralls.io/r/nrako/formal) [![Dependency Status](https://gemnasium.com/nrako/formal-mongoose.png)](https://gemnasium.com/nrako/formal-mongoose)
+# Formal-mongoose [![Build Status](https://travis-ci.org/nrako/formal-mongoose.png?branch=master)](https://travis-ci.org/nrako/formal-mongoose) [![Coverage Status](https://coveralls.io/repos/nrako/formal-mongoose/badge.png?branch=master)](https://coveralls.io/r/nrako/formal) [![Dependency Status](https://gemnasium.com/nrako/formal-mongoose.png)](https://gemnasium.com/nrako/formal-mongoose) [![Code Climate](https://codeclimate.com/github/nrako/formal-mongoose.png)](https://codeclimate.com/github/nrako/formal-mongoose)
 
 Formal + Mongoose = DRY! Simple solution to define a form with validation (and more) from a mongoose schema.
 
